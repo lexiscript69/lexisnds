@@ -1,0 +1,14 @@
+# Illegal selling and redistribution of this script is strictly prohibite
+# Please respect author's Property
+# Binigay sainyo ng libre, ipamahagi nyo rin ng libre.
+#
+#
+
+
+
+function v2ray() {
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+v2ray
+
+
+echo "OWSHI MINECRAFT "
