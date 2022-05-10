@@ -1,6 +1,3 @@
-#!/bin/sh
-
-
 # Version
 LIBSODIUM_VER=stable
 MBEDTLS_VER=2.16.5
