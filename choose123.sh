@@ -14,13 +14,14 @@ YellowBG="\033[43m"
     echo -e ""
     echo -e "${Yellow}Note: Please Subscribe to my Youtube Channel ${Red}( https://www.youtube.com/channel/UC7LIFRhsjIi9tXc2MWUS6nw )${font} ${Yellow}and Watch the Tutorial for this scipt's password.${Font}"
     echo -e ""
-read -rp "Please Enter Script Password：" menu_num1"
+read -rp "Please Enter Script Password：" menu_num1
 if [ $menu_num1 == 'UC7LIFRhsjIi9tXc2MWUS6nw' ]
 then
 
-wget -q 'https://raw.githubusercontent.com/prmarkking/bnprscr/main/multi' && chmod +x multi && ./multi
+#scriptmo dito
 
 else
 clear
      echo -e "${RedBG}Wrong Password! Please watch my tutorial for this scipt's password and subscribe to my Youtube Channel. ${Font}"
      echo -e "${Red}( https://www.youtube.com/channel/UC7LIFRhsjIi9tXc2MWUS6nw )${font}"
+fi
