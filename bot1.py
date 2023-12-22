@@ -44,12 +44,12 @@ def main():
     updater = Updater(TOKEN, use_context=True)
     dp = updater.dispatcher
 
-    # Add command handlers
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("status", status))
-    dp.add_handler(CommandHandler("ddosnamso",service namso start , pass_args=True))
-    dp.add_handler(CommandHandler("stopnamsoddos", service namso stop, pass_args=True))
-    dp.add_handler(CommandHandler("ddosrestart", service namso restart, pass_args=True))
+# Add command handlers
+dp.add_handler(CommandHandler("start", start))
+dp.add_handler(CommandHandler("status", status))
+dp.add_handler(CommandHandler("ddosnamso", lambda update, context: restart_service(update, context, ["namso", "start"]), pass_args=True))
+dp.add_handler(CommandHandler("stopnamsoddos", lambda update, context: restart_service(update, context, ["namso", "stop"]), pass_args=True))
+dp.add_handler(CommandHandler("ddosrestart", lambda update, context: restart_service(update, context, ["namso", "restart"]), pass_args=True))
 
     # Add text message handler
     dp.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
